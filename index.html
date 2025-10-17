@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Willie M.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254111971910?text=Hello%20Willie,%20I%20saw%20your%20portfolio!"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener">
+   <img src="images/whatsapp-icon.png" alt="Chat on WhatsApp">
+</a>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Willie M. Logo">
+      </a>
+      </ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+        <li><a href="project.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="controls">
+        <button id="theme-toggle-3" aria-label="Toggle theme">🌀</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Projects</h1>
+      <div class="project-tools">
+        <label>Filter: </label>
+        <select id="filter-select">
+          <option value="all">All</option>
+          <option value="web">Web</option>
+          <option value="automation">Automation</option>
+          <option value="ux">UI/UX</option>
+        </select>
+        <input id="search-projects" placeholder="Search projects...">
+      </div>
+
+      <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container">© <span id="year-3"></span> Willie M.</div>
+  </footer>
+
+  <script type="module" src="js/projects.js"></script>
+</body>
+</html>
